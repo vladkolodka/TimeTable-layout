@@ -23,6 +23,24 @@
     </style>
 </head>
 <body>
+<div class="hidden_block_templates">
+    <div class="submenu_dnipro" data-name="Днепропетровская обл.">
+        <a class="mdl-navigation__link" href="#">Днепропетровск</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+    </div>
+    <div class="submenu_kyiv" data-name="Киевская обл.">
+        <a class="mdl-navigation__link" href="#">Киев</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+        <a class="mdl-navigation__link" href="#">Населенный пункт</a>
+    </div>
+</div>
 <div class="demo-layout-waterfall mdl-layout mdl-js-layout  mdl-layout--fixed-drawer">
     <header class="mdl-layout__header mdl-layout__header--waterfall main-header">
         <!-- Top row, always visible -->
@@ -46,27 +64,34 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Расширенный поиск</a>
-                <a class="mdl-navigation__link" href="">Вход</a>
+                <a class="mdl-navigation__link" href="#">Расширенный поиск</a>
+                <a class="mdl-navigation__link" href="#">Вход</a>
             </nav>
         </div>
     </header>
     <div class="mdl-layout__drawer main-menu">
-        <span class="mdl-layout-title">Области</span>
-        <nav class="mdl-navigation" id="main-navigation">
-            <a class="mdl-navigation__link" href="" data-region="1">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="2">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="3">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-            <a class="mdl-navigation__link" href="" data-region="4">Область</a>
-       </nav>
-
+        <span class="mdl-layout-title small_title" id="menu_title">Области</span>
+        <div class="menu-wrapper">
+            <nav class="mdl-navigation" id="main-navigation">
+                <a class="mdl-navigation__link" href="#" data-region="dnipro">Днепропетровская</a>
+                <a class="mdl-navigation__link" href="#" data-region="kyiv">Киевская</a>
+                <a class="mdl-navigation__link" href="#" data-region="lviv">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="zpr">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="4">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="4">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="4">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="4">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="4">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="4">Область</a>
+                <a class="mdl-navigation__link" href="#" data-region="4">Область</a>
+            </nav>
+            <div class="submenu">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored back" id="backToMainMenu">
+                    <i class="material-icons">arrow_back_black</i>
+                </button>
+                <nav class="submenu-content mdl-navigation"></nav>
+            </div>
+        </div>
     </div>
     <main class="mdl-layout__content">
         <div class="page-content">
